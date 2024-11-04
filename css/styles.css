@@ -7,10 +7,10 @@ footer {
     text-align: center;
 }
 
-.color-section {
-    input[type=number] 
-    border: 2px solid red;
+.color-section { 
+    border: 2px solid white;
     border-radius: 4px;
+    width: 79%;
     
     background-color:aliceblue;
     padding: 12px;
@@ -41,6 +41,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.hasil {
+    width: 60%;
+}
+
 button {
     width: 50%;
     padding: 8px;
@@ -50,10 +54,19 @@ button {
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    left: 200px
+    left: 100px
   }
 
+.Awal {
+    max-width: 550px; /* Menentukan lebar maksimal elemen */
+    margin: 0 auto; 
+    padding: 4px; /* Memberikan jarak di dalam elemen */
+    line-height: 1.6;
+    text-align: justify;
+    position: relative;
+    right: 60px;
 
+}
 
 #result{
     font-size: 30px;
