@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js" defer></script>
 </head>
 <body>
 <main>
@@ -16,18 +17,29 @@
             </header>
     
             <article>
-                <p>Nannti akan diisi......................</p>
+                <p>Berat badan idea; adalah impian semua orang. tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+                </p>
+                <p>Yuk, Hitung sekarang di kalkulator BMI.</p>
+
             </article>
         </div>
 
-        <form class="color-section ">
-            <div>
+        <form id="bmiCal" class="color-section ">
+            <div class="text-bold">
                 <label for="">Berat Badan :</label>
                 <input id="berat-badan" type="number"/>
-            </div>
             
-            <button>Hitung BMI</button>
-            <button>Reset</button>
+                <label for="">Usia :</label>
+                <input id="usia" type="number"/>
+          
+                <label for="">Tinggi Badan :</label>
+                <input id="tinggi-badan" type="number"/>
+            </div>
+
+
+            <button type="hitung">Hitung BMI</button>
+            <br> </br>
+            <button type="reset">Reset</button>
         </form>
 
         <div>
@@ -51,7 +63,8 @@
         <div class="color-section text-center">
             <h4>Hasil Kalkulasi:</h4>
 
-            <p id="result">24.5</p>
+            <p id="bmi-output"></p> <!-- Menampilkan hasil BMI -->
+            <p id="bmi-status"></p>
         </div>
 
         <!--Info Hasil-->

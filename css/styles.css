@@ -8,9 +8,9 @@ footer {
 }
 
 .color-section {
-    input[type=text] 
-        border: 2px solid red;
-        border-radius: 4px;
+    input[type=number] 
+    border: 2px solid red;
+    border-radius: 4px;
     
     background-color:aliceblue;
     padding: 12px;
@@ -19,6 +19,10 @@ footer {
 
 .text-center {
     text-align: center;
+}
+
+.text-bold{
+    font-weight: bold;
 }
 
 input[type=number] {
@@ -31,16 +35,23 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-button {
-  background-color: #e7e7e7; /* Green */
-  border-radius: 4px;
-  color: black;
-  padding: 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+button {
+    width: 50%;
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 200px
+  }
 
 
 
