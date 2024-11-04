@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+}
+
+.color-section {
+    input[type=text] 
+        border: 2px solid red;
+        border-radius: 4px;
+    
+    background-color:aliceblue;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+  background-color: #e7e7e7; /* Green */
+  border-radius: 4px;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+
+#result{
+    font-size: 30px;
+    font-weight: bold;
+
+}
