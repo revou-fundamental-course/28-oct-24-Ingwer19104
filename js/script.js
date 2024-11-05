@@ -9,6 +9,7 @@ document.getElementById('bmiCal').addEventListener('submit', function(e) {
     if (!berat || !tinggi) {
         document.getElementById("bmi-output").innerHTML = "Mohon masukkan berat dan tinggi badan yang valid.";
         document.getElementById("bmi-status").innerHTML = "";
+        document.getElementById("bmi-desc").innerHTML = "";
         return;
     }
 
@@ -19,18 +20,25 @@ document.getElementById('bmiCal').addEventListener('submit', function(e) {
     // Menampilkan hasil BMI
     document.getElementById("bmi-output").innerHTML = `BMI Anda: ${result}`;
 
-    // Menentukan status berdasarkan nilai BMI
+    // Menentukan status dan penjelasan berdasarkan nilai BMI
     let status;
+    let description;
+
     if (result < 18.5) {
         status = "Kekurangan Berat Badan";
-    } else if (result < 24.9) {
+        description = "Hasil BMI di bawah 18.5.<br>Anda berada dalam kategori kekurangan berat badan. Sebaiknya perhatikan asupan nutrisi dan berkonsultasi dengan ahli gizi untuk meningkatkan berat badan.";
+    } else if (result >= 18.5 && result <= 24.9) {
         status = "Normal (Ideal)";
-    } else if (result < 29.9) {
+        description = "Hasil BMI antara 18.5 - 24.9.<br>Anda berada dalam kategori berat badan normal. Pertahankan pola makan seimbang dan gaya hidup aktif untuk menjaga kesehatan.";
+    } else if (result >= 25 && result <= 29.9) {
         status = "Kelebihan Berat Badan";
+        description = "Hasil BMI antara 25 - 29.9.<br>Anda berada dalam kategori kelebihan berat badan. Disarankan untuk mengatur pola makan dan meningkatkan aktivitas fisik.";
     } else {
         status = "Kegemukan (Obesitas)";
+        description = "Hasil BMI di atas 30.<br>Anda berada dalam kategori obesitas. Konsultasikan dengan profesional kesehatan untuk mendapatkan panduan penurunan berat badan yang sesuai.";
     }
 
-    // Menampilkan status BMI
+    // Menampilkan status dan deskripsi BMI
     document.getElementById("bmi-status").innerHTML = `Status: ${status}`;
+    document.getElementById("bmi-desc").innerHTML = description;
 });
