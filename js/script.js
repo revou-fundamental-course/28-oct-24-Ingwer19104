@@ -28,19 +28,19 @@ document.getElementById('bmiCal').addEventListener('submit', function(e) {
     if (result < 18.5) {
         status = "Kekurangan Berat Badan";
         description = "Hasil BMI di bawah 18.5.<br>Anda berada dalam kategori kekurangan berat badan. Sebaiknya perhatikan asupan nutrisi dan berkonsultasi dengan ahli gizi untuk meningkatkan berat badan.";
-        hasil = "Beberapa penyakit yang berasal dari kegemukan <br> diabetes <br> hipertensi <br> Sakit janutng <br> Osteoarhtritis"
+        hasil = "Kekurangan berat badan dapat meningkatkan risiko:<br>- Anemia<br>- Osteoporosis<br>- Sistem kekebalan tubuh yang lemah<br>- Pertumbuhan yang terganggu pada anak-anak dan remaja."
     } else if (result >= 18.5 && result <= 24.9) {
         status = "Normal (Ideal)";
         description = "Hasil BMI antara 18.5 - 24.9.<br>Anda berada dalam kategori berat badan normal. Pertahankan pola makan seimbang dan gaya hidup aktif untuk menjaga kesehatan.";
-        hasil = "Beberapa penyakit yang berasal dari kegemukan <br> diabetes <br> hipertensi <br> Sakit janutng <br> Osteoarhtritis"
+        hasil = "Pertahankan pola makan seimbang dan gaya hidup aktif untuk menjaga kesehatan Anda."
     } else if (result >= 25 && result <= 29.9) {
         status = "Kelebihan Berat Badan";
         description = "Hasil BMI antara 25 - 29.9.<br>Anda berada dalam kategori kelebihan berat badan. Disarankan untuk mengatur pola makan dan meningkatkan aktivitas fisik.";
-        hasil = "Beberapa penyakit yang berasal dari kegemukan <br> diabetes <br> hipertensi <br> Sakit janutng <br> Osteoarhtritis"
+        hasil = "Kelebihan berat badan dapat meningkatkan risiko:<br>- Diabetes tipe 2<br>- Hipertensi<br>- Kolesterol tinggi<br>- Penyakit jantung"
     } else {
         status = "Kegemukan (Obesitas)";
         description = "Hasil BMI di atas 30.<br>Anda berada dalam kategori obesitas. Konsultasikan dengan profesional kesehatan untuk mendapatkan panduan penurunan berat badan yang sesuai.";
-        hasil = "Beberapa penyakit yang berasal dari kegemukan <br> diabetes <br> hipertensi <br> Sakit janutng <br> Osteoarhtritis"
+        hasil = "Obesitas dapat meningkatkan risiko:<br>- Diabetes<br>- Hipertensi<br>- Penyakit jantung<br>- Osteoartritis<br>- Penyakit hati berlemak"
     }
 
     // Menampilkan status dan deskripsi BMI
