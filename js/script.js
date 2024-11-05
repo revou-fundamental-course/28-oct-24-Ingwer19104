@@ -22,13 +22,13 @@ document.getElementById('bmiCal').addEventListener('submit', function(e) {
     // Menentukan status berdasarkan nilai BMI
     let status;
     if (result < 18.5) {
-        status = "Underweight";
-    } else if (result < 25) {
-        status = "Healthy";
-    } else if (result < 30) {
-        status = "Overweight";
+        status = "Kekurangan Berat Badan";
+    } else if (result < 24.9) {
+        status = "Normal (Ideal)";
+    } else if (result < 29.9) {
+        status = "Kelebihan Berat Badan";
     } else {
-        status = "Obesity";
+        status = "Kegemukan (Obesitas)";
     }
 
     // Menampilkan status BMI

@@ -58,14 +58,10 @@ button {
   }
 
 .Awal {
-    max-width: 550px; /* Menentukan lebar maksimal elemen */
-    margin: 0 auto; 
-    padding: 4px; /* Memberikan jarak di dalam elemen */
-    line-height: 1.6;
+    max-width: 83%; 
+    line-height: 1.6; /* Jarak antar baris */
+    box-sizing: border-box;
     text-align: justify;
-    position: relative;
-    right: 60px;
-
 }
 
 #result{
@@ -73,3 +69,4 @@ button {
     font-weight: bold;
 
 }
+
