@@ -57,7 +57,7 @@ button {
 
   }
 
-.Awal {
+.bmi-article {
     max-width: 83%; 
     line-height: 1.6; /* Jarak antar baris */
     box-sizing: border-box;
@@ -91,4 +91,12 @@ button {
     main{
         flex-direction: column;
     }
+}
+
+.gender-selection {
+    display: flex;
+    flex-direction: column; /* Atur pilihan agar muncul secara vertikal */
+    gap: 4px; /* Jarak antar pilihan */
+    padding: 10px;
+    padding-left: 1px;
 }

@@ -1,4 +1,4 @@
-document.getElementById('bmiCal').addEventListener('submit', function(e) {
+document.getElementById('bmi-cal').addEventListener('submit', function(e) {
     e.preventDefault(); // Mencegah form refresh halaman
 
     // Mengambil nilai input berat dan tinggi

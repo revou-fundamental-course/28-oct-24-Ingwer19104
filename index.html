@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
-    <script src="js\script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 <main>
@@ -13,83 +13,97 @@
     <section>
         <div>
             <header>
-                <h1> Kalkulator BMI</h1>
+                <h1>Kalkulator BMI</h1>
             </header>
-    
-            <article class="Awal">
-                <p>Berat badan idea adalah impian semua orang. tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
-                </p>
-                <p>Yuk, Hitung sekarang di kalkulator BMI.</p>
 
+            <!-- Paragraf Pertama -->
+            <article class="bmi-article">
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?</p>
+                <p>Yuk, hitung sekarang di kalkulator BMI.</p>
             </article>
         </div>
 
-        <form id="bmiCal" class="color-section ">
-            <div class="text-bold">
-                <label for="">Berat Badan :</label>
-                <input id="berat-badan" type="number"/>
+        <form id="bmi-cal" class="color-section text-bold">
             
-                <label for="">Usia :</label>
-                <input id="usia" type="number"/>
-          
-                <label for="">Tinggi Badan :</label>
-                <input id="tinggi-badan" type="number"/>
+            <!-- Gender -->
+            <label for="gender">Pilih Jenis Kelamin Anda:</label>
+            <div class="gender-selection">
+                <label>
+                    <input type="radio" name="gender" value="male" required>
+                    Laki-laki
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required>
+                    Perempuan
+                </label>
             </div>
 
+            <div class="text-bold">
+                <!-- Berat Badan -->
+                <label for="berat-badan">Berat Badan (kg):</label>
+                <input id="berat-badan" type="number" min="1" required />
+                
+                <!-- Usia -->
+                <label for="usia">Usia:</label>
+                <input id="usia" type="number" min="1" required />
+                
+                <!-- Tinggi Badan -->
+                <label for="tinggi-badan">Tinggi Badan (cm):</label>
+                <input id="tinggi-badan" type="number" min="1" required />
+            </div>
 
-            <button type="hitung">Hitung BMI</button>
-            <br> </br>
+            <button type="submit">Hitung BMI</button>
+            <br><br>
             <button type="reset">Reset</button>
         </form>
-
+        
+        <!-- Paragraf Kedua -->
         <div>
             <header>
                 <h2>Keunggulan Fitur</h2>  
             </header>
-            
-            <article class="Awal">
-                <p> 1. Menghitung berat badan</p>
+            <article class="bmi-article">
+                <p>1. Menghitung berat badan</p>
                 <p>2. Menentukan kategori berat badan ideal atau tidak</p>
                 <p>3. Mempersiapkan program penurunan berat badan</p>
-                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
                 
-                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI= Kg/M<sup>2</sup>.</p>
+                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
             </article>
         </div>
     </section>
 
-    <!-- Section Result-->
+    <!-- Section Result -->
     <section class="hasil">
         <header>
-            <h1> Hasil</h1>
+            <h1>Hasil</h1>
         </header>
 
-        <!--Hasil Kalkulasi-->
+        <!-- Hasil Kalkulasi -->
         <div class="color-section text-center">
             <h4>Hasil Kalkulasi:</h4>
-
-            <p id="bmi-output"></p> <!-- Menampilkan hasil BMI -->
+        <!-- Menampilkan hasil BMI -->
+            <p id="bmi-output"></p> 
             <p id="bmi-status"></p>
         </div>
 
-        <!--Info Hasil-->
+        <!-- Info Hasil -->
         <article class="Awal">
             <p id="bmi-desc"></p>
             <br>
-            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kehawatiran Anda terkait dengan berat badan Anda</p>
+            <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
         </article>
         
         <article class="penyakit text-center">
-            <header id="bmi-hasil">  </header>
+            <header id="bmi-hasil"></header>
         </article>
         
     </section>
 
-    
 </main>
 
-        <footer>
-            <span> Made By Ingwer Ludwig Bendjamin Napitupulu </span>
-        </footer>
+<footer>
+    <span>Made By Ingwer Ludwig Bendjamin Napitupulu</span>
+</footer>
 </body>
 </html>
