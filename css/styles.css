@@ -54,7 +54,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    left: 200px
+
   }
 
 .Awal {
@@ -85,4 +85,10 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px){
+    main{
+        flex-direction: column;
+    }
 }
